@@ -24,6 +24,7 @@
     animation-delay: 300ms;
     animation: fromLeft ease-in 1000ms forwards;    
     box-shadow: none !important;
+    background: #fff;
 }
 .modal-100 .modal-dialog .modal-content{
     border: 0;
@@ -34,6 +35,9 @@
     border: 0;
     box-shadow: none !important;
     border-radius: 0;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .modal-100 .modal-dialog .modal-content .modal-footer{
     border: 0;
