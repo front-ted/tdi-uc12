@@ -2,7 +2,7 @@ html{scroll-behavior: smooth;}
 
 body{
   background: url("../imgs/bg_textura.jpg") repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   overflow-x: hidden;
 }
