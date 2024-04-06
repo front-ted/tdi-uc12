@@ -38,6 +38,7 @@ header {
   max-width: 990px;
   margin-top: -50px;
 }
+.bloco.branco2{background: url('../imgs/bg_elem3_dir.png') no-repeat left top / 15%;}
 .bloco.branco2 .container{
   background-color: #fff;
   border: 1px solid #2a8080;
@@ -46,6 +47,7 @@ header {
   margin-bottom: -50px;
   position: relative;
 }
+.bloco.branco2{background: url('../imgs/bg_elem4_esq.png') no-repeat right bottom / 20%;}
 .bloco.azul2 .container{
   background-color: rgba(209, 216, 216, 0.6);
   border: 1px solid #2a8080;
@@ -86,6 +88,7 @@ header {
   width: 301px;
   height: 333px;
   border: none;
+  margin-bottom: 30px;
 }
 .bt-meio{background: url('../imgs/bt1.png') no-repeat;}
 .bt-meio:hover{background: url('../imgs/bt1_hv.png') no-repeat;}
@@ -117,4 +120,62 @@ li {
   box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
+}
+
+.modal-content{
+  background: url('../imgs/bg_modal.jpg') repeat;
+}
+.modal-body .btn{
+  background: url('../imgs/fechar.png') no-repeat;
+  width: 125px;
+  height: 61px;
+  border: none;
+}
+.modal-body .btn:hover{background: url('../imgs/fechar_hover.png') no-repeat;}
+.modal-body .close{
+  background: url('../imgs/ico_fechar.png') no-repeat;
+  height: 63px;
+  width: 63px;
+  opacity: 1;
+}
+.modal-body .close:hover{background: url('../imgs/ico_fechar_hover.png') no-repeat;}
+.modal-body .container, .bloco.branco2 .modal-body .container{
+  background: #f0f0f0;
+  padding: 20px 50px;
+}
+.modal-100 .modal-dialog .modal-content .modal-header{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-bottom: 1px solid #2a8080;
+  padding: 0;
+}
+.modal-100 .modal-dialog .modal-content .modal-header h3{width: 90%;}
+
+.carousel-control.left{
+  background: url('../imgs/seta_voltar.png') no-repeat;
+  height: 63px;
+  width: 63px;
+  opacity: 1;
+  left: -30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.carousel-control.left:hover{background: url('../imgs/seta_voltar_hover.png') no-repeat;}
+
+.carousel-control.right{
+  background: url('../imgs/seta_avancar.png') no-repeat;
+  height: 63px;
+  width: 63px;
+  opacity: 1;
+  right: -30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.carousel-control.right:hover{background: url('../imgs/seta_avancar_hover.png') no-repeat;}
+
+@media screen and (max-width: 580px){
+  .modal-body .close, .carousel-control.left, .carousel-control.right{transform: scale(0.8);}
 }
