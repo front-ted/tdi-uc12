@@ -36,3 +36,33 @@ function horaCerta(){
 
     setTimeout('horaCerta()',500);
 };
+
+$(document).ready(function(){
+    $('.btn-wifi').click(function(){
+        $(".conteudo-wifi").css("display", "block");
+        $(".conteudo-terminais").css("display", "none");
+        $(".conteudo-chatbots").css("display", "none");
+        $(".conteudo-aplicativo").css("display", "none");
+    });
+
+    $('.btn-terminais').click(function(){
+        $(".conteudo-wifi").css("display", "none");
+        $(".conteudo-terminais").css("display", "block");
+        $(".conteudo-chatbots").css("display", "none");
+        $(".conteudo-aplicativo").css("display", "none");
+    });
+
+    $('.btn-chatbots').click(function(){
+        $(".conteudo-wifi").css("display", "none");
+        $(".conteudo-terminais").css("display", "none");
+        $(".conteudo-chatbots").css("display", "block");
+        $(".conteudo-aplicativo").css("display", "none");
+    });
+
+    $('.btn-aplicativo').click(function(){
+        $(".conteudo-wifi").css("display", "none");
+        $(".conteudo-terminais").css("display", "none");
+        $(".conteudo-chatbots").css("display", "none");
+        $(".conteudo-aplicativo").css("display", "block");
+    });
+});

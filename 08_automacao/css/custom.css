@@ -30,7 +30,6 @@ body {
   overflow-x: hidden;
 }
 
-
 html{scroll-behavior: smooth;}
 .topo{
   margin-top: 30px;
@@ -601,6 +600,7 @@ ul.marcador-trena li{
 
 .painel-iphone{
   background: url('../imgs/painel01_bg.png') no-repeat center;
+  background-size: 100%;
   width: 351px;
   height: 678px;
   margin: 20px auto;
@@ -637,6 +637,63 @@ ul.marcador-trena li{
   width: 42px;
 }
 
+.painel-infografico{
+  width: 440px;
+  text-align: center;
+  margin: 40px auto 10px auto;
+  position: relative;
+  padding: 0;
+}
+.btn-infografico{
+  display: inline-block;
+  border: none;
+  transition: all 0.2s;
+  background-size: 100%;
+  width: 201px;
+  height: 201px;
+  margin: 0px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+.btn-infografico:hover{transform: scale(1.05);}
+
+.btn-wifi{background: url('../imgs/infografico01.png') no-repeat center; background-size: 100%;}
+.btn-terminais{background: url('../imgs/infografico02.png') no-repeat center; background-size: 100%;}
+.btn-chatbots{background: url('../imgs/infografico03.png') no-repeat center; background-size: 100%;}
+.btn-aplicativo{background: url('../imgs/infografico04.png') no-repeat center; background-size: 100%;}
+
+.conteudo-wifi, .conteudo-terminais, .conteudo-chatbots, .conteudo-aplicativo{
+  display: none;
+  width: 400px;
+  margin: 10px auto 40px auto;
+  border-radius: 40px;
+  padding: 5px 20px;
+  transition: all 0.2s;
+}
+.conteudo-wifi{
+  border: #ad372d solid 4px;
+}
+.conteudo-wifi h4{
+  color: #ad372d;
+}
+.conteudo-terminais{
+  border: #df8068 solid 4px;
+}
+.conteudo-terminais h4{
+  color: #df8068;
+}
+.conteudo-chatbots{
+  border: #215b5a solid 4px;
+}
+.conteudo-chatbots h4{
+  color: #215b5a;
+}
+.conteudo-aplicativo{
+  border: #358080 solid 4px;
+}
+.conteudo-aplicativo h4{
+  color: #358080;
+}
 
 
 @media screen and (max-width: 820px){
@@ -677,28 +734,6 @@ ul.marcador-trena li{
     height: 180px;
   }
 
-  .painel-moodboard{
-    background: none;
-    width: 100%;
-    height: 100%;
-    margin: 20px auto;
-    transform: scale(1);
-  }
-  .btn-moodboard{
-    position: relative;
-    border: none;
-    margin: 20px auto;
-    display: block;
-  }
-
-  .painel-normas{
-    background: none;
-    width: 100%;
-    height: 100%;
-    margin: 30px auto;
-    padding: 0px;
-  }
-
   .caixa-destaque{
     width: 100%;
   }
@@ -729,6 +764,26 @@ ul.marcador-trena li{
   /*-------- /FUNDO LEI --------*/
 
   table.senac{
+    width: 100%;
+  }
+
+  .painel-iphone{
+    width: 300px;
+    height: 580px;
+    padding: 65px 40px;
+  }
+  .btn-iphone{
+    margin: 15px;
+  }
+  #hora-certa{
+    left: 130px;
+    top: 25px;
+  }
+
+  .painel-infografico{
+    width: 100%;
+  }
+  .conteudo-wifi, .conteudo-terminais, .conteudo-chatbots, .conteudo-aplicativo{
     width: 100%;
   }
 
