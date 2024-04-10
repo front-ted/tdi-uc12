@@ -1,0 +1,181 @@
+html{scroll-behavior: smooth;}
+body{
+  background: url("../imgs/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h2, h3, h4 {
+  color: #2a8080;
+}
+h2 em{
+  font-size: 25px;
+  display: block;
+}
+h2, h3{
+  font-weight: bold;
+}
+header {
+  margin-top: 50px;
+}
+.grupo-imprimir {
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+.container{max-width: 1080px;}
+.bloco.azul{background: url('../imgs/bg_elem1_dir.png') no-repeat right top / 15%;}
+.bloco.azul .container{
+  background-color: rgba(209, 216, 216, 0.6);
+  border: 1px solid #2a8080;
+  padding: 20px 100px;
+  padding-bottom: 100px;
+}
+.bloco.branco{background: url('../imgs/bg_elem2_esq.png') no-repeat left top / 15%;}
+.bloco.branco .container{
+  background-color: #fff;
+  border: 1px solid #2a8080;
+  padding: 20px 50px;
+  max-width: 990px;
+  margin-top: -50px;
+}
+.bloco.branco2{background: url('../imgs/bg_elem3_dir.png') no-repeat left top / 15%;}
+.bloco.branco2 .container{
+  background-color: #fff;
+  border: 1px solid #2a8080;
+  padding: 20px 50px;
+  max-width: 990px;
+  margin-bottom: -50px;
+  position: relative;
+}
+.bloco.branco2{background: url('../imgs/bg_elem4_esq.png') no-repeat right bottom / 20%;}
+.bloco.azul2 .container{
+  background-color: rgba(209, 216, 216, 0.6);
+  border: 1px solid #2a8080;
+  padding: 20px 100px;
+  padding-top: 100px;
+}
+.bloco.atividade .container{
+  padding: 20px 50px;
+  max-width: 990px;
+}
+.panel .img-responsive{max-width: 70%;}
+.panel-heading{
+  background: #2a8080 !important;
+  margin: 0 -10px;
+  border-radius: 10px;
+}
+.panel-heading h4 a{
+  background: url('../imgs/ico_gaita_fecha.png') no-repeat right center;
+  color: #fff;
+  transition: all .4s;
+}
+.panel-heading h4 a.collapsed{background: url('../imgs/ico_gaita_abre.png') no-repeat right center;}
+.panel-group .panel-heading+.panel-collapse>.panel-body{
+  border: 2px solid #2a8080;
+  border-top: none;
+}
+.caixa-destaque-livre{
+  background-color: #80372d;
+}
+.caixa-destaque-livre p, .caixa-destaque-livre li{color: #fff;}
+
+.painel{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.painel button{
+  width: 301px;
+  height: 333px;
+  border: none;
+  margin-bottom: 30px;
+}
+.bt-meio{background: url('../imgs/bt1.png') no-repeat;}
+.bt-meio:hover{background: url('../imgs/bt1_hv.png') no-repeat;}
+.bt-parede{background: url('../imgs/bt2.png') no-repeat;}
+.bt-parede:hover{background: url('../imgs/bt2_hv.png') no-repeat;}
+
+.bloco.branco2 .modal .container{
+  margin: auto;
+  padding: 20px;
+  border:none;
+}
+li {
+  list-style-image: url(../imgs/marcador2.png);
+}
+.caixa-destaque-livre li{list-style-image: url(../imgs/marcador1.png);}
+
+.bt-voltar{
+  background: url('../imgs/bt_topo.png') no-repeat;
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin-bottom: -80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figura{
+  border-radius: 20px;
+  box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
+}
+
+.modal-content{
+  background: url('../imgs/bg_modal.jpg') repeat;
+}
+.modal-body .btn{
+  background: url('../imgs/fechar.png') no-repeat;
+  width: 125px;
+  height: 61px;
+  border: none;
+}
+.modal-body .btn:hover{background: url('../imgs/fechar_hover.png') no-repeat;}
+.modal-body .close{
+  background: url('../imgs/ico_fechar.png') no-repeat;
+  height: 63px;
+  width: 63px;
+  opacity: 1;
+}
+.modal-body .close:hover{background: url('../imgs/ico_fechar_hover.png') no-repeat;}
+.modal-body .container, .bloco.branco2 .modal-body .container{
+  background: #f0f0f0;
+  padding: 20px 50px;
+}
+.modal-100 .modal-dialog .modal-content .modal-header{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-bottom: 1px solid #2a8080;
+  padding: 0;
+}
+.modal-100 .modal-dialog .modal-content .modal-header h3{width: 90%;}
+
+.carousel-control.left{
+  background: url('../imgs/seta_voltar.png') no-repeat;
+  height: 63px;
+  width: 63px;
+  opacity: 1;
+  left: -30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.carousel-control.left:hover{background: url('../imgs/seta_voltar_hover.png') no-repeat;}
+
+.carousel-control.right{
+  background: url('../imgs/seta_avancar.png') no-repeat;
+  height: 63px;
+  width: 63px;
+  opacity: 1;
+  right: -30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.carousel-control.right:hover{background: url('../imgs/seta_avancar_hover.png') no-repeat;}
+
+@media screen and (max-width: 580px){
+  .modal-body .close, .carousel-control.left, .carousel-control.right{transform: scale(0.8);}
+}
