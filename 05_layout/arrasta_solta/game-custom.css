@@ -71,9 +71,7 @@
     margin-top: -10px;
 }
 .game-body .slot .card{
-    color: #fff;
-    background: #4ba69d;
-    border-color: #4ba69d;
+    border:none;
 }
 
 .game-titulo p {
@@ -98,7 +96,7 @@
 .ui-droppable p {
     font-size: 18px;
 }
-
+.box{margin-bottom: 20px;}
 #slots,
 #cardPile {
     display: flex;
@@ -139,9 +137,9 @@
         padding-top: 5px !important;
         margin-bottom: 5px !important;
     }
-    .game-body .slot, .game-titulo{
+    /* .game-body .slot, .game-titulo{
         max-width: 100%;
-    }
+    } */
     .card {
         display: inline;
     }

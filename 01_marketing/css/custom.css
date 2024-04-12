@@ -6,10 +6,8 @@ body{
   background-position: center;
   overflow-x: hidden;
 }
-h2 {
-  color: #2a8080;
-}
 h2, h3{
+  color: #2a8080;
   font-weight: bold;
 }
 header {
