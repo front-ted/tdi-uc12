@@ -19,14 +19,21 @@
   src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
 }
 
+html{scroll-behavior: smooth;}
 
 body {
-  background: url('../imgs/bg_01.jpg') no-repeat center top;
+  background: url('../imgs/bg_01.jpg') no-repeat center top 0px,
+              url('../imgs/bg_02.png') no-repeat center top 1419px,
+              url('../imgs/bg_03.png') no-repeat center top 4420px,
+              url('../imgs/bg_04.png') no-repeat center top 5750px,
+              url("../imgs/asset01_esq.png") no-repeat left 10px top 0% / 8%,
+              url("../imgs/asset02_dir.png") no-repeat right 10px bottom 8% / 9%,
+              linear-gradient(#785646 0px, #4A3A32 2000px, #E2CDC4 5500px, #A88D9A) center top 2418px;
+  background-color: #eedcc8 !important;
   height: auto;
   overflow-x: hidden;
 }
 
-html{scroll-behavior: smooth;}
 .topo{
   margin-top: 30px;
 }
@@ -43,6 +50,7 @@ html{scroll-behavior: smooth;}
   background-color: #F3E7D8;
   border-radius: 0px;
   border: #EBD9C5 solid 2pt;
+  position: relative;
 }
 .container header{
   margin-top: 100px;
@@ -51,8 +59,11 @@ html{scroll-behavior: smooth;}
 
 .bloco-final{
   background-color: #4F4643;
-  margin-top: 80px;
-  padding-top: 60px;
+  margin-top: -100px;
+  padding-top: 100px;
+}
+.bloco-final .container{
+  padding: 0px 60px;
 }
 .bloco-final h3, .bloco-final p{
   color: #fff !important;
@@ -697,8 +708,11 @@ ul.marcador-verde li{
 @media screen and (max-width: 480px){
 
   .pagina .container.fundo-tecnicos{
-    padding-left: 50px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .bloco-final .container{
+    padding: 0px 30px;
   }
 
   .video-youtube, .espera-video {
