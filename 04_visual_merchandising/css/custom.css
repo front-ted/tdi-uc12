@@ -512,13 +512,14 @@ table.senac td{
 
 /*-------- MODAIS --------*/
 .modal-100 .modal-content{
-  background: url('../imgs/bg_modal.png') no-repeat;
+  background: linear-gradient(0.25turn, #D1C2B2, #F3E9DD, #D1C2B2);
+  
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
 }
 .modal-100 .modal-body .container{
-  background-color: #fff;
+  /*background-color: #fff;*/
   position: relative;
   margin-bottom: 30px;
   padding: 0px 60px;
