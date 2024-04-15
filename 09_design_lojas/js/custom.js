@@ -29,11 +29,11 @@ jQuery("document").ready(function($){
     var pg_number = parseInt(window.location.href.split('?')[1].split('=')[1]);
   
     if(pg_number == 1){
-      document.body.style.backgroundImage = "url('imgs/bg_01.jpg')";
+        document.body.style.backgroundImage = "url('imgs/bg_01.jpg')";
     }else if(pg_number == 2){
-      document.body.style.backgroundImage = "url('imgs/bg_02.jpg')";
+        document.body.style.backgroundImage = "url('imgs/bg_02.jpg')";
     }else{
-
+        document.body.style.backgroundImage = "url('imgs/bg_01.jpg')";
     }
     
 });
