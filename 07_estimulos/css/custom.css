@@ -1,0 +1,118 @@
+html{scroll-behavior: smooth;}
+body{
+  background: url("../imgs/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h2, h3, h4 {
+  color: #2a8080;
+}
+h2 em{
+  font-size: 25px;
+  display: block;
+}
+h2, h3{
+  font-weight: bold;
+}
+header {
+  margin-top: 50px;
+}
+.grupo-imprimir {
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+.container{max-width: 1080px;}
+.panel .img-responsive{max-width: 70%;}
+.panel-heading{
+  background: #2a8080 !important;
+  margin: 0 -10px;
+  border-radius: 10px;
+}
+.panel-heading h4 a{
+  background: url('../imgs/ico_gaita_fecha.png') no-repeat right center;
+  color: #fff;
+  transition: all .4s;
+}
+.panel-heading h4 a.collapsed{background: url('../imgs/ico_gaita_abre.png') no-repeat right center;}
+.panel-group .panel-heading+.panel-collapse>.panel-body{
+  border: 2px solid #2a8080;
+  border-top: none;
+}
+.caixa-destaque-livre{
+  background-color: #80372d;
+}
+.caixa-destaque-livre p, .caixa-destaque-livre li{color: #fff;}
+
+li {
+  list-style-image: url(../imgs/marcador2.png);
+}
+.caixa-destaque-livre li{list-style-image: url(../imgs/marcador1.png);}
+
+
+.figura{
+  border-radius: 20px;
+  box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
+}
+
+.modal-content{
+  background: url('../imgs/bg_modal.jpg') repeat;
+}
+.modal-body .btn{
+  background: url('../imgs/fechar.png') no-repeat;
+  width: 125px;
+  height: 61px;
+  border: none;
+}
+.modal-body .btn:hover{background: url('../imgs/fechar_hover.png') no-repeat;}
+.modal-body .close{
+  background: url('../imgs/ico_fechar.png') no-repeat;
+  height: 63px;
+  width: 63px;
+  opacity: 1;
+}
+.modal-body .close:hover{background: url('../imgs/ico_fechar_hover.png') no-repeat;}
+.modal-body .container, .bloco.branco2 .modal-body .container{
+  background: #f0f0f0;
+  padding: 20px 50px;
+}
+.modal-100 .modal-dialog .modal-content .modal-header{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-bottom: 1px solid #2a8080;
+  padding: 0;
+}
+.modal-100 .modal-dialog .modal-content .modal-header h3{width: 90%;}
+
+.carousel-control.left{
+  background: url('../imgs/seta_voltar.png') no-repeat;
+  height: 63px;
+  width: 63px;
+  opacity: 1;
+  left: -30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.carousel-control.left:hover{background: url('../imgs/seta_voltar_hover.png') no-repeat;}
+
+.carousel-control.right{
+  background: url('../imgs/seta_avancar.png') no-repeat;
+  height: 63px;
+  width: 63px;
+  opacity: 1;
+  right: -30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.carousel-control.right:hover{background: url('../imgs/seta_avancar_hover.png') no-repeat;}
+
+
+
+@media screen and (max-width: 580px){
+  .modal-body .close, .carousel-control.left, .carousel-control.right{transform: scale(0.8);}
+}
