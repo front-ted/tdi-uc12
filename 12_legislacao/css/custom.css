@@ -1,0 +1,224 @@
+html{scroll-behavior: smooth;}
+body{
+  background: url("../imgs/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h2, h3, h4 {
+  color: #2a8080;
+}
+h2 em{
+  font-size: 25px;
+  display: block;
+}
+h2, h3{
+  font-weight: bold;
+}
+header {
+  margin-top: 50px;
+}
+.grupo-imprimir {
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+.container{max-width: 1080px;}
+.panel .img-responsive{max-width: 70%;}
+.panel-heading{
+  background: #2a8080 !important;
+  margin: 0 -10px;
+  border-radius: 10px;
+}
+.panel-heading h4 a{
+  background: url('../imgs/ico_gaita_fecha.png') no-repeat right center;
+  color: #fff;
+  transition: all .4s;
+}
+.panel-heading h4 a.collapsed{background: url('../imgs/ico_gaita_abre.png') no-repeat right center;}
+.panel-group .panel-heading+.panel-collapse>.panel-body{
+  border: 2px solid #2a8080;
+  border-top: none;
+}
+.caixa-destaque-livre{
+  background-color: #80372d;
+}
+.caixa-destaque-livre p, .caixa-destaque-livre li{color: #fff;}
+
+li {
+  list-style-image: url(../imgs/marcador2.png);
+}
+.caixa-destaque-livre li{list-style-image: url(../imgs/marcador1.png);}
+
+.bt-voltar{
+  background: url('../imgs/bt_topo.png') no-repeat;
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin-bottom: -80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figura{
+  border-radius: 20px;
+  box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
+}
+
+.modal-content{
+  background: url('../imgs/bg_modal.jpg') repeat;
+}
+.modal-body .btn{
+  background: url('../imgs/fechar.png') no-repeat;
+  width: 125px;
+  height: 61px;
+  border: none;
+}
+.modal-body .btn:hover{background: url('../imgs/fechar_hover.png') no-repeat;}
+.modal-body .close{
+  background: url('../imgs/ico_fechar.png') no-repeat;
+  height: 63px;
+  width: 63px;
+  opacity: 1;
+}
+.modal-body .close:hover{background: url('../imgs/ico_fechar_hover.png') no-repeat;}
+.modal-body .container, .bloco.branco2 .modal-body .container{
+  padding: 20px 50px;
+}
+.modal-100 .modal-dialog .modal-content .modal-header{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0;
+}
+.modal-100 .modal-dialog .modal-content .modal-header h3{width: 90%;}
+
+.carousel-control.left{
+  background: url('../imgs/seta_voltar.png') no-repeat;
+  height: 63px;
+  width: 63px;
+  opacity: 1;
+  left: -30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.carousel-control.left:hover{background: url('../imgs/seta_voltar_hover.png') no-repeat;}
+
+.carousel-control.right{
+  background: url('../imgs/seta_avancar.png') no-repeat;
+  height: 63px;
+  width: 63px;
+  opacity: 1;
+  right: -30px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.carousel-control.right:hover{background: url('../imgs/seta_avancar_hover.png') no-repeat;}
+
+.paragrafo-destaque{
+  border: 2px solid #8c372d;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: table;
+  margin: 20px auto;
+}
+
+.marcador li{
+  list-style-image: url('../imgs/marcador.png');
+}
+.painel{
+  background: url('../imgs/painel_fundo.png') no-repeat;
+  width: 926px;
+  height: 1223px;
+  margin: 30px auto;
+  padding-top: 475px;
+  padding-left: 120px;
+}
+
+.painel button{
+  width: 559px;
+  height: 106px;
+  margin-bottom: 35px;
+  border: none;
+  transition: all .4s;
+}
+.bt-acessibilidade{background: url('../imgs/painel_bt1.png') no-repeat;}
+.bt-incendio{background: url('../imgs/painel_bt2.png') no-repeat;}
+.bt-trabalho{background: url('../imgs/painel_bt3.png') no-repeat;}
+.bt-localizacao{background: url('../imgs/painel_bt4.png') no-repeat;}
+
+.bt-acessibilidade:hover{background: url('../imgs/painel_bt1_hv.png') no-repeat;}
+.bt-incendio:hover{background: url('../imgs/painel_bt2_hv.png') no-repeat;}
+.bt-trabalho:hover{background: url('../imgs/painel_bt3_hv.png') no-repeat;}
+.bt-localizacao:hover{background: url('../imgs/painel_bt4_hv.png') no-repeat;}
+
+.bt-acessibilidade.visitado{background: url('../imgs/painel_bt1_ok.png') no-repeat;}
+.bt-incendio.visitado{background: url('../imgs/painel_bt2_ok.png') no-repeat;}
+.bt-trabalho.visitado{background: url('../imgs/painel_bt3_ok.png') no-repeat;}
+.bt-localizacao.visitado{background: url('../imgs/painel_bt4_ok.png') no-repeat;}
+
+.caixa-modal1{
+  background: #fae8c8;
+  border: 2px solid #cabcaf;
+  margin: 130px auto;
+  margin-bottom: 150px;
+  position: relative;
+  width: 90%;
+}
+.caixa-modal1 p, .caixa-modal1 li{color: #000;}
+.caixa-modal1::before{
+  content: '';
+  background: url('../imgs/dest_elem1.png') no-repeat;
+  width: 158px;
+  height: 151px;
+  display: block;
+  position: absolute;
+  right: -30px;
+  top: -110px;
+}
+.caixa-modal1.caixa-destaque-livre::after{
+  content: '';
+  background: url('../imgs/dest_elem2.png') no-repeat;
+  width: 281px;
+  height: 177px;
+  display: block;
+  position: absolute;
+  left: -30px;
+  bottom: -130px;
+}
+
+.caixa-destaque-livre.verde{background-color: #358080;}
+
+@media screen and (max-width: 1024px){
+  .painel{
+    background: url('../imgs/mob_painel_fundo.png') no-repeat;
+    width: 341px;
+    height: 515px;
+    padding-top: 125px;
+    padding-left: 20px;
+  }
+  .painel button{
+    width: 301px;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+
+  .painel .bt-incendio{height: 90px;}
+
+  .bt-acessibilidade, .bt-acessibilidade:hover{background: url('../imgs/mob_painel_bt1.png') no-repeat;}
+  .bt-incendio, .bt-incendio:hover{background: url('../imgs/mob_painel_bt2.png') no-repeat;}
+  .bt-trabalho, .bt-trabalho:hover{background: url('../imgs/mob_painel_bt3.png') no-repeat;}
+  .bt-localizacao, .bt-localizacao:hover{background: url('../imgs/mob_painel_bt4.png') no-repeat;}
+
+  .bt-acessibilidade.visitado{background: url('../imgs/mob_painel_bt1_ok.png') no-repeat;}
+  .bt-incendio.visitado{background: url('../imgs/mob_painel_bt2_ok.png') no-repeat;}
+  .bt-trabalho.visitado{background: url('../imgs/mob_painel_bt3_ok.png') no-repeat;}
+  .bt-localizacao.visitado{background: url('../imgs/mob_painel_bt4_ok.png') no-repeat;}
+}
+
+@media screen and (max-width: 580px){
+  .modal-body .close, .carousel-control.left, .carousel-control.right{transform: scale(0.8);}
+}
