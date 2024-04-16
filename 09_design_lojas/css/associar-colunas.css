@@ -9,11 +9,12 @@
     color: #333;
     display: flex;
     align-content: center;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     align-content: center;
     border: 2px solid #333;
     font-weight: bold;
+    transition: all 0.2s;
 }
 .selecionado {
     background-color: #2A8080;
@@ -32,7 +33,7 @@
     content: "";
     font-size: 30px;
     font-weight: bold;
-     position: relative;
+    position: relative;
 }
 .item p {
     text-align: center;
@@ -91,6 +92,9 @@
     align-items: center;
     align-content: center;
     font-weight: bold;
+    transition: all 0.2s;
+    margin: 31px;
+    height: 140px;
 }
 .resp:hover{
     background-color: #2A8080;
