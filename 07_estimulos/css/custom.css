@@ -110,8 +110,148 @@ li {
   margin: auto;
 }
 .carousel-control.right:hover{background: url('../imgs/seta_avancar_hover.png') no-repeat;}
+.bloco header.container{background: transparent;}
+.bloco .container{
+  border-radius: 50px;
+  background: #fff;
+  padding: 50px
+}
+.bloco{padding-bottom: 70px;}
+.bloco1{
+  background: url('../imgs/bg1.jpg') no-repeat center;
+  background-size: cover;
+  margin-top: 80px;
+}
+.caixa-destaque-livre.verde{background-color: #2a8081;}
+.divisores-parallax{
+  position: relative;
+}
+.divisor-top{
+  top: -2px;
+  left: 0px;
+  position: absolute;
+  z-index: 10;
+}
+.divisor-bottom{
+  bottom: -1px;
+  left: 0px;
+  position: absolute;
+  z-index: 10;
+}
+.parallax {
+  min-height: 300px;
+  background: transparent;
+  width: 100% !important;
+}
+.parallax-mirror {
+  z-index: unset !important;
+  width: 100% !important;
+}
+.parallax-mirror {
+  z-index: unset !important;
+  width: 100% !important;
+}
+.parallax-slider {
+  width: 100%;
+}
+.bloco2{
+  background: url('../imgs/bg2.jpg') no-repeat center;
+  background-size: cover;
+}
+.bloco2 .container{background-color: transparent;}
 
+.painel{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.painel button{
+  margin-bottom: 20px;
+  width: 264px;
+  height: 411px;
+  background-position: center;
+  transition: all .4s;
+  border:none;
+}
+.painel button:hover{background-position: center;}
+.bt-visao{background: url('../imgs/painel_bt1.png') no-repeat;}
+.bt-audicao{background: url('../imgs/painel_bt2.png') no-repeat;}
+.bt-olfato{background: url('../imgs/painel_bt3.png') no-repeat;}
+.bt-tato{background: url('../imgs/painel_bt4.png') no-repeat;}
 
+.bt-visao:hover{background: url('../imgs/painel_bt1_hv.png') no-repeat;}
+.bt-audicao:hover{background: url('../imgs/painel_bt2_hv.png') no-repeat;}
+.bt-olfato:hover{background: url('../imgs/painel_bt3_hv.png') no-repeat;}
+.bt-tato:hover{background: url('../imgs/painel_bt4_hv.png') no-repeat;}
+
+.bloco3{
+  background: rgb(121,53,42);
+  background: linear-gradient(90deg, rgba(121,53,42,1) 0%, rgba(41,122,123,1) 100%);
+  padding: 30px 0;
+}
+.bloco4{
+  background: url('../imgs/BG4_elem1.png') no-repeat left center, url('../imgs/BG4_elem2.png') no-repeat right center;
+  background-size: 10%;
+}
+
+.bt-transcricao{
+  border: none;
+  background-color: transparent;
+}
+.podcast{
+  display: flex;
+  flex-wrap: nowrap;
+  background: url('../imgs/img_ouvir.png') no-repeat top center;
+  padding-top: 420px;
+  max-width: 615px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.bloco5{
+  background: url('../imgs/BG4.jpg') no-repeat top center;
+  background-attachment: fixed;
+}
+.bloco5 .container{
+  background-color: transparent;
+}
+.bloco5 .container *{color: #fff;}
+.caixa-destaque-livre.branco{background-color: #fff;}
+.caixa-destaque-livre.branco *{color: #000;}
+.bloco6{
+  background-color: rgb(216,231,226);
+  background: url('../imgs/bg6_elem1.png') no-repeat left top / 15%, url('../imgs/bg6_elem2.png') no-repeat right center / 15%, url('../imgs/bg6_elem3.png') no-repeat left bottom / 15%, linear-gradient(180deg, rgba(216,231,226,1) 0%, rgba(186,226,218,1) 100%);
+}
+.bloco7{
+  background: url('../imgs/bg7_elem1.png'), url('../imgs/bg7_elem2.png'), url('../imgs/bg7_elem3.png'), url('../imgs/bg7_elem4.png');
+  background-position: top left, top right, left bottom, right bottom;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-color: #fcf5e3;
+  padding: 30px 0;
+}
+.bloco7 .container, .bloco8 .container{background: transparent;}
+.bloco8{
+  background: url('../imgs/bg8.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bloco9{
+  background: #81392d;
+  border-top: 10px solid #d1816a;
+}
+.bloco9 .container{background: transparent;}
+.bloco9 .container *{color: #fff;}
+.bt-voltar{
+  display: table;
+  margin: 50px auto;
+  transition: all .4s;
+}
+.bt-voltar:hover{transform: scale(1.1);}
+
+@media screen and (max-width: 1024px){
+  .bloco7{background: #fcf5e3;}
+}
 
 @media screen and (max-width: 580px){
   .modal-body .close, .carousel-control.left, .carousel-control.right{transform: scale(0.8);}
