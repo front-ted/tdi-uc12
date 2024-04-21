@@ -26,10 +26,14 @@ jQuery("document").ready(function($){
 
     var pg_number = parseInt(window.location.href.split('?')[1].split('=')[1]);
   
+    document.body.style.backgroundImage = "url('imgs/bg_01.jpg')";
+
     if(pg_number == 1){
         document.body.style.backgroundImage = "url('imgs/bg_01.jpg')";
     }else if(pg_number == 2){
         document.body.style.backgroundImage = "url('imgs/bg_02.jpg')";
+    }else if(pg_number == 3){
+        document.body.style.backgroundImage = "url('imgs/bg_03.jpg')";
     }else{
         document.body.style.backgroundImage = "url('imgs/bg_01.jpg')";
     }
