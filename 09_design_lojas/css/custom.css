@@ -45,7 +45,7 @@ html{scroll-behavior: smooth;}
   padding-top: 30px;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 0px;
-  border: #2A8080 solid 1pt;
+  border: #2A8080 solid 2pt;
 }
 .container header{
   margin-top: 100px;
@@ -588,6 +588,7 @@ table.senac td{
 }
 /*-------- /FUNDO LEI --------*/
 
+
 li{
   font-size: 16px;
 }
@@ -596,6 +597,31 @@ ul{
 }
 ul.marcador-verde li{
   list-style-image: url('../imgs/marcador.png');
+}
+
+ul.ico-vantagem, ul.ico-desvantagem{
+  margin-left: 0px;
+}
+ul.ico-vantagem h4{
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+ul.ico-vantagem li{
+  list-style-image: url('../imgs/ico_vantagem.png');
+  font-weight: bold;
+}
+ul.ico-desvantagem h4{
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #80392C;
+}
+ul.ico-desvantagem li{
+  list-style-image: url('../imgs/ico_desvantagem.png');
+  font-weight: bold;
+}
+ul.ico-vantagem p, ul.ico-desvantagem p{
+  margin-top: -10px;
+  margin-bottom: 15px;
 }
 
 .painel-layout{
@@ -628,6 +654,147 @@ ul.marcador-verde li{
   max-width: 160px;
 }
 
+.titulo-leiaute{
+  margin-top: 80px;
+  margin-bottom: -10px;
+}
+
+/*-------- DESTAQUE VANTAGEM/DESVANTAGEM --------*/
+.div-dest_vermelho{
+  width: 90%;
+  border: #90372d solid 2pt;
+  background-color: #F2E5E3;
+  display: block;
+  position: relative;
+  margin: 80px auto;
+}
+.div-dest_verde{
+  width: 95%;
+  border: #2A8080 solid 2pt;
+  background: url('../imgs/destaque_vantagens.png') no-repeat left 5px center / 35%;
+  background-color: #DFFAF4;
+  display: block;
+  margin: -25px auto;
+  padding-left: 34%;
+  padding-right: 10px;
+}
+/*-------- /DESTAQUE VANTAGEM/DESVANTAGEM --------*/
+
+.div-infografico{
+  margin: 40px auto;
+  text-align: center;
+}
+.div-infografico img{
+  display:inline;
+}
+
+
+/*-------- PAINEL LOJA 3D --------*/
+.painel-loja3d{
+  background: url('../imgs/painel_loja_fundo.png') no-repeat center;
+  background-size: 100%;
+  margin: 50px auto;
+  width: 865px;
+  height: 516px;
+  position: relative;
+}
+.btn-loja3d{
+  background: url('../imgs/painel_loja_bt.png') no-repeat center;
+  background-size: 100%;
+  border-radius: 100%;
+  box-shadow: #222222 4px 4px 8px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  transition: all 0.2s;
+  padding: 0;
+  position: absolute;
+}
+.btn-loja3d:hover{
+  transform: scale(1.15);
+  filter: brightness(170%);
+  border: none !important;
+  box-shadow: #121212 5px 5px 10px;
+}
+.btn-loja3d.visitado{
+  filter: brightness(200%);
+}
+.btn-loja3d.visitado::after{
+  content: url('../imgs/ico_vantagem.png');
+  position: absolute;
+  width: 20px;
+  height: 19px;
+  left: 13px;
+  bottom: 12px;
+}
+.btn-prateleiras{top: 78px; left: 314px;}
+.btn-balcoes{top: 144px; left: 386px;}
+.btn-vitrines{top: 70px; right: 262px;}
+.btn-araras{top: 66px; right: 382px;}
+.btn-gondolas_centrais{top: 200px; left: 502px;}
+.btn-ponta_gondola{top: 250px; left: 350px;}
+.btn-gondolas_inclinada{top: 154px; left: 70px;}
+.btn-gondolas_checkout{top: 274px; left: 212px;}
+.btn-moveis_caixa{top: 231px; left: 145px;}
+.btn-provadores{top: 95px; left: 227px;}
+.btn-quiosques_interativos{top: 159px; left: 434px;}
+.btn-bancadas{top: 216px; left: 290px;}
+.btn-manequins{top: 95px; right: 328px;}
+.btn-expositores_giratorios{top: 178px; left: 331px;}
+.btn-expositores_livros{top: 145px; right: 140px;}
+.btn-expositores_joias{top: 162px; left: 269px;}
+.btn-expositores_aquecidos{top: 318px; left: 305px;}
+.btn-expositores_refrigerados{top: 178px; right: 70px;}
+
+
+/*----- MOBILE -----*/
+.painel-loja3d_mobile{
+  text-align: center;
+  margin: 50px auto;
+  width: 100%;
+}
+.btn-loja3d_mobile{
+  width: 300px;
+  height: 208px;
+  border: none;
+  transition: all 0.2s;
+  margin: 10px auto;
+}
+.btn-loja3d_mobile:hover{
+  transform: scale(1.1);
+}
+.btn-loja3d_mobile.visitado{
+  filter: brightness(60%);
+}
+.btn-prateleiras_mobile{background: url('../imgs/mob_loja_bt01.png') no-repeat; background-size: 100%;}
+.btn-balcoes_mobile{background: url('../imgs/mob_loja_bt02.png') no-repeat; background-size: 100%;}
+.btn-vitrines_mobile{background: url('../imgs/mob_loja_bt03.png') no-repeat; background-size: 100%;}
+.btn-araras_mobile{background: url('../imgs/mob_loja_bt04.png') no-repeat; background-size: 100%;}
+.btn-gondolas_centrais_mobile{background: url('../imgs/mob_loja_bt05.png') no-repeat; background-size: 100%;}
+.btn-ponta_gondola_mobile{background: url('../imgs/mob_loja_bt06.png') no-repeat; background-size: 100%;}
+.btn-gondolas_inclinada_mobile{background: url('../imgs/mob_loja_bt07.png') no-repeat; background-size: 100%;}
+.btn-gondolas_checkout_mobile{background: url('../imgs/mob_loja_bt08.png') no-repeat; background-size: 100%;}
+.btn-moveis_caixa_mobile{background: url('../imgs/mob_loja_bt09.png') no-repeat; background-size: 100%;}
+.btn-provadores_mobile{background: url('../imgs/mob_loja_bt10.png') no-repeat; background-size: 100%;}
+.btn-quiosques_interativos_mobile{background: url('../imgs/mob_loja_bt11.png') no-repeat; background-size: 100%;}
+.btn-bancadas_mobile{background: url('../imgs/mob_loja_bt12.png') no-repeat; background-size: 100%;}
+.btn-manequins_mobile{background: url('../imgs/mob_loja_bt13.png') no-repeat; background-size: 100%;}
+.btn-expositores_giratorios_mobile{background: url('../imgs/mob_loja_bt14.png') no-repeat; background-size: 100%;}
+.btn-expositores_livros_mobile{background: url('../imgs/mob_loja_bt15.png') no-repeat; background-size: 100%;}
+.btn-expositores_joias_mobile{background: url('../imgs/mob_loja_bt16.png') no-repeat; background-size: 100%;}
+.btn-expositores_aquecidos_mobile{background: url('../imgs/mob_loja_bt17.png') no-repeat; background-size: 100%;}
+.btn-expositores_refrigerados_mobile{background: url('../imgs/mob_loja_bt18.png') no-repeat; background-size: 100%;}
+
+/*----- /MOBILE -----*/
+
+/*-------- /PAINEL LOJA 3D --------*/
+
+
+.legenda-imagem{
+  word-break: break-word;
+}
+
+
 @media screen and (max-width: 820px){
   .carousel{
     width: 100%;
@@ -644,13 +811,10 @@ ul.marcador-verde li{
     margin-right: -60px;
   }
 
-  .painel-ergonomia{
-    width: 100%;
-  }
 
-  .painel-moodboard{
+  .painel-loja3d{
     transform: scale(0.75);
-    margin: -60px -102px;
+    margin: -50px -110px;
   }
 }
 
@@ -699,24 +863,12 @@ ul.marcador-verde li{
     width: 100%;
   }
 
-  .painel-iphone{
-    width: 300px;
-    height: 580px;
-    padding: 65px 40px;
-  }
-  .btn-iphone{
-    margin: 15px;
-  }
-  #hora-certa{
-    left: 130px;
-    top: 25px;
-  }
-
-  .painel-infografico{
-    width: 100%;
-  }
-  .conteudo-wifi, .conteudo-terminais, .conteudo-chatbots, .conteudo-aplicativo{
-    width: 100%;
+  .div-dest_verde{
+    background: url('../imgs/destaque_vantagens.png') no-repeat top 10px center / 50%;
+    background-color: #DFFAF4;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 120px;
   }
 
 }

@@ -22,8 +22,6 @@ $(".fundo-item").click(function(){
     $('.menu').removeClass('fade-check');
 });
 
-
-
 jQuery("document").ready(function($){
 
     var pg_number = parseInt(window.location.href.split('?')[1].split('=')[1]);
@@ -36,4 +34,116 @@ jQuery("document").ready(function($){
         document.body.style.backgroundImage = "url('imgs/bg_01.jpg')";
     }
     
+});
+
+
+$(".btn-prateleiras").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-balcoes").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-vitrines").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-araras").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-gondolas_centrais").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-ponta_gondola").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-gondolas_inclinada").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-gondolas_checkout").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-moveis_caixa").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-provadores").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-quiosques_interativos").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-bancadas").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-manequins").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-expositores_giratorios").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-expositores_livros").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-expositores_joias").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-expositores_aquecidos").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-expositores_refrigerados").click(function(){
+    $(this).addClass("visitado");
+});
+
+
+$(".btn-prateleiras_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-balcoes_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-vitrines_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-araras_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-gondolas_centrais_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-ponta_gondola_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-gondolas_inclinada_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-gondolas_checkout_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-moveis_caixa_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-provadores_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-quiosques_interativos_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-bancadas_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-manequins_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-expositores_giratorios_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-expositores_livros_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-expositores_joias_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-expositores_aquecidos_mobile").click(function(){
+    $(this).addClass("visitado");
+});
+$(".btn-expositores_refrigerados_mobile").click(function(){
+    $(this).addClass("visitado");
 });
