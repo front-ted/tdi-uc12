@@ -434,7 +434,7 @@ h3.panel-title, .tab-content p{
   cursor: pointer;
 }
 .img-zoom::after{
-  content: url('../objetos/lupa.png');
+  content: url('../imgs/ico_zoom.png');
   display: block;
   width: 95px;
   height: 95px;
@@ -785,6 +785,7 @@ ul.marcador-trena li{
   }
   .conteudo-wifi, .conteudo-terminais, .conteudo-chatbots, .conteudo-aplicativo{
     width: 100%;
+    display: block;
   }
 
 }
