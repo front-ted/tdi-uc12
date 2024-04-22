@@ -637,9 +637,9 @@ ul.ico-vantagem p, ul.ico-desvantagem p{
   background-size: 100%;
   width: 420px;
   height: 196px;
-  margin: 6px;
+  margin: 5px;
+  border-radius: 35px;
 }
-
 .btn-zonas{background: url('../imgs/bt1.png') no-repeat; background-size: 100%;}
 .btn-fluxo{background: url('../imgs/bt2.png') no-repeat; background-size: 100%;}
 .btn-zonas:hover{background-image: url('../imgs/bt1_hv.png');}
