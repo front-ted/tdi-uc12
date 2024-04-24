@@ -192,6 +192,10 @@ li {
 
 .caixa-destaque-livre.verde{background-color: #358080;}
 
+.caixa-destaque-livre.grande{
+  background-position: left 10px top 50px;
+}
+
 @media screen and (max-width: 1024px){
   .painel{
     background: url('../imgs/mob_painel_fundo.png') no-repeat;
