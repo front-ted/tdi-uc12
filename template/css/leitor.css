@@ -425,8 +425,12 @@ header.senac{
 
 }
 
-  .no-print, .nao-imprimir {
+.no-print, .nao-imprimir {
   display: none !important;
+}
+
+.citacao-print{
+  padding-left: 30% !important;
 }
 
 @media print {
