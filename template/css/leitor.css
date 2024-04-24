@@ -303,7 +303,7 @@ header.senac{
 }
 
 .modal.fade {
-  display: block !important;
+  display: block;
   position: relative !important;
   opacity: 1;
 }

@@ -109,12 +109,20 @@ li {
 }
 .carousel-control.right:hover{background: url('../imgs/seta_avancar_hover.png') no-repeat;}
 
-.painel, .painel2, .painel3, .painel4{
+.painel2, .painel4{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.painel{
+  width: 743px;
+  height: 435px;
+  margin: 50px auto;
+  background: url('../imgs/painel_fundo.png') no-repeat center center;
+  position: relative;
+}
 .painel button{
+  position: absolute;
   width: 242px;
   height: 105px;
   margin-bottom: 20px;
@@ -122,18 +130,50 @@ li {
   transition: all .4s;
 }
 
-.bt-reconhecimento{background: url('../imgs/bt_reconhecimento.png') no-repeat;}
-.bt-lealdade{background: url('../imgs/bt_lealdade.png') no-repeat;}
-.bt-qualidade{background: url('../imgs/bt_qualidade.png') no-repeat;}
-.bt-associacoes{background: url('../imgs/bt_associacoes.png') no-repeat;}
-.bt-outros{background: url('../imgs/bt_reconhecimento.png') no-repeat;}
+.bt-reconhecimento{
+  background: url('../imgs/bt_reconhecimento.png') no-repeat;
+  top: 0;
+  left: 250px;
+}
+.bt-lealdade{
+  background: url('../imgs/bt_lealdade.png') no-repeat;
+  top: 100px;
+  left: 0;
+}
+.bt-qualidade{
+  background: url('../imgs/bt_qualidade.png') no-repeat;
+  top: 100px;
+  right: 0;
+}
+.bt-associacoes{
+  background: url('../imgs/bt_associacoes.png') no-repeat;
+  bottom: 0;
+  left: 80px;
+}
+.bt-outros{
+  background: url('../imgs/bt_outros.png') no-repeat;
+  bottom: 0;
+  right: 80px;
+}
 
 .bt-reconhecimento:hover{background: url('../imgs/bt_reconhecimento_hv.png') no-repeat;}
 .bt-lealdade:hover{background: url('../imgs/bt_lealdade_hv.png') no-repeat;}
 .bt-qualidade:hover{background: url('../imgs/bt_qualidade_hv.png') no-repeat;}
 .bt-associacoes:hover{background: url('../imgs/bt_associacoes_hv.png') no-repeat;}
-.bt-outros:hover{background: url('../imgs/bt_reconhecimento_hv.png') no-repeat;}
-
+.bt-outros:hover{background: url('../imgs/bt_outros_hv.png') no-repeat;}
+.mb-0{margin-bottom: 0;}
+.mt-0{margin-top: 0;}
+.bt-transcricao{
+  border: none;
+  background-color: transparent;
+}
+.podcast{
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 615px;
+  margin: 20px auto;
+  justify-content: center;
+}
 .painel2 {
   max-width: 620px;
   margin: 30px auto;
@@ -156,8 +196,44 @@ li {
 .bt-conte:hover{background: url('../imgs/bt_historias_relevantes_hv.png') no-repeat;}
 .bt-ofereca:hover{background: url('../imgs/bt_conteudo_valor_hv.png') no-repeat;}
 
+.painel3{
+  width: 743px;
+  height: auto;
+  margin: 50px auto;
+  background: url('../imgs/painel_jornada_do_consumidor.png') no-repeat left center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.painel3 img{
+  width: 41px;
+  margin-right: 80px;
+  margin-bottom: 30px;
+}
 .painel3 button{
-
+  margin-bottom: 20px;
+  border: none;
+  transition: all .4s;
+}
+.bt-aprendizado{
+  width: 214px;
+  height: 95px;
+  background: url('../imgs/bt_aprendizado_descoberta.png') no-repeat;
+}
+.bt-problema{
+  width: 214px;
+  height: 131px;
+  background: url('../imgs/vt_reconhecimento.png') no-repeat;
+}
+.bt-consideracao{
+  width: 213px;
+  height: 152px;
+  background: url('../imgs/bt_consideracao.png') no-repeat;
+}
+.bt-decisao{
+  width: 213px;
+  height: 113px;
+  background: url('../imgs/bt_decisao.png') no-repeat;
 }
 
 .painel4 button{
@@ -173,6 +249,33 @@ li {
 .bt-online:hover{background: url('../imgs/bt_online_hv.png') no-repeat center;}
 .bt-offline:hover{background: url('../imgs/bt_offline_hv.png') no-repeat center;}
 
+
+@media screen and (max-width: 780px){
+  .painel{
+    position: unset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: unset;
+    width: unset;
+    background: none;
+  }
+  .painel button, .painel3 button{
+    position: unset;
+    top: unset;
+    bottom: unset;
+    left: unset;
+    right: unset;
+  }
+  .painel3{
+    width: unset;
+    background: url(../imgs/painel_jornada_do_consumidor.png) no-repeat top center;
+    padding-top: 250px;
+    background-size: 200px;
+    align-items: center;
+  }
+  .painel3 img{margin-right: 10px;}
+}
 @media screen and (max-width: 580px){
   .modal-body .close, .carousel-control.left, .carousel-control.right{transform: scale(0.8);}
 }

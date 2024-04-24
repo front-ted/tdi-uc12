@@ -335,14 +335,21 @@ p.legenda-imagem {
     display: block;
     position: relative;
     opacity: 1;
+    border: none !important;
   }
   .modal.fade .modal-dialog {
     width: 100%;
+    border: none !important;
+  }
+  .modal.fade .modal-dialog ul{
+    margin-left: 0 !important;
+    padding-left: 0 !important;
   }
   .modal.fade .modal-dialog .modal-content {
     box-shadow: unset;
     border-radius: 0px;
     background: none;
+    border: none !important;
   }
   table{width: 100% !important;}
   table ul{
