@@ -176,6 +176,12 @@ li {
 }
 .carousel-control.right:hover{background: url('../imgs/seta_avancar_hover.png') no-repeat;}
 
+#bgmodal-acerto .modal-content,#bgmodal-erro .modal-content{background: #fff;}
+
+
 @media screen and (max-width: 580px){
   .modal-body .close, .carousel-control.left, .carousel-control.right{transform: scale(0.8);}
+  .bloco.azul .container{
+    padding: 20px 50px;
+  }
 }
