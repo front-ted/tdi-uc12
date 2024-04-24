@@ -58,7 +58,7 @@ li {
 }
 
 .modal-content{
-  background: url('../imgs/bg_modal.jpg') repeat;
+  /* background: url('../imgs/bg_modal.jpg') repeat; */
 }
 .modal-body .btn{
   background: url('../imgs/fechar.png') no-repeat;
