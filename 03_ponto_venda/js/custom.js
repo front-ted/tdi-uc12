@@ -30,91 +30,73 @@ $(document).ready(function () {
 
     //localStorage.clear()
 
-    var btn_ambientes_01;
-    var btn_ambientes_02;
-    var btn_ambientes_03;
-    var btn_ambientes_04;
-    var btn_ambientes_05;
-    var btn_ambientes_06;
-    var btn_ambientes_07;
-    var btn_ambientes_08;
-    var btn_ambientes_09;
+    var btn_mapa_01;
+    var btn_mapa_02;
+    var btn_mapa_03;
+    var btn_mapa_04;
+    var btn_mapa_05;
+    var btn_mapa_06;
+    var btn_mapa_07;
 
-    $(".btn-salas_abertas").on('click', function(){
-        localStorage.setItem('btn_ambientes_01', 'check');
-        $(this).css("background-image","url('imgs/painel/bt01_3.png')");
+    $(".btn-shoppings").on('click', function(){
+        localStorage.setItem('btn_mapa_01', 'check');
+        $(this).css("background-image","url('imgs/painel_bt06_ok.png')");
     })
-    $(".btn-salas_fechadas").on('click', function(){
-        localStorage.setItem('btn_ambientes_02', 'check');
-        $(this).css("background-image","url('imgs/painel/bt02_3.png')");
+    $(".btn-centros_comerciais").on('click', function(){
+        localStorage.setItem('btn_mapa_02', 'check');
+        $(this).css("background-image","url('imgs/painel_bt07_ok.png')");
     })
-    $(".btn-salas_reunioes").on('click', function(){
-        localStorage.setItem('btn_ambientes_03', 'check');
-        $(this).css("background-image","url('imgs/painel/bt03_3.png')");
+    $(".btn-lojas_rua").on('click', function(){
+        localStorage.setItem('btn_mapa_03', 'check');
+        $(this).css("background-image","url('imgs/painel_bt03_ok.png')");
     })
-    $(".btn-recepcao").on('click', function(){
-        localStorage.setItem('btn_ambientes_04', 'check');
-        $(this).css("background-image","url('imgs/painel/bt04_3.png')");
+    $(".btn-galerias_comerciais").on('click', function(){
+        localStorage.setItem('btn_mapa_04', 'check');
+        $(this).css("background-image","url('imgs/painel_bt01_ok.png')");
     })
-    $(".btn-circulacoes").on('click', function(){
-        localStorage.setItem('btn_ambientes_05', 'check');
-        $(this).css("background-image","url('imgs/painel/bt05_3.png')");
+    $(".btn-open_mall").on('click', function(){
+        localStorage.setItem('btn_mapa_05', 'check');
+        $(this).css("background-image","url('imgs/painel_bt04_ok.png')");
     })
-    $(".btn-banheiros").on('click', function(){
-        localStorage.setItem('btn_ambientes_06', 'check');
-        $(this).css("background-image","url('imgs/painel/bt06_3.png')");
+    $(".btn-aeroportos").on('click', function(){
+        localStorage.setItem('btn_mapa_06', 'check');
+        $(this).css("background-image","url('imgs/painel_bt02_ok.png')");
     })
-    $(".btn-copas").on('click', function(){
-        localStorage.setItem('btn_ambientes_07', 'check');
-        $(this).css("background-image","url('imgs/painel/bt07_3.png')");
-    })
-    $(".btn-ambientes_descompressao").on('click', function(){
-        localStorage.setItem('btn_ambientes_08', 'check');
-        $(this).css("background-image","url('imgs/painel/bt08_3.png')");
-    })
-    $(".btn-ambientes_especificos").on('click', function(){
-        localStorage.setItem('btn_ambientes_09', 'check');
-        $(this).css("background-image","url('imgs/painel/bt09_3.png')");
+    $(".btn-e_commerce").on('click', function(){
+        localStorage.setItem('btn_mapa_07', 'check');
+        $(this).css("background-image","url('imgs/painel_bt05_ok.png')");
     })
 
-    btn_ambientes_01 = localStorage.getItem('btn_ambientes_01');
-    btn_ambientes_02 = localStorage.getItem('btn_ambientes_02');
-    btn_ambientes_03 = localStorage.getItem('btn_ambientes_03');
-    btn_ambientes_04 = localStorage.getItem('btn_ambientes_04');
-    btn_ambientes_05 = localStorage.getItem('btn_ambientes_05');
-    btn_ambientes_06 = localStorage.getItem('btn_ambientes_06');
-    btn_ambientes_07 = localStorage.getItem('btn_ambientes_07');
-    btn_ambientes_08 = localStorage.getItem('btn_ambientes_08');
-    btn_ambientes_09 = localStorage.getItem('btn_ambientes_09');
+    btn_mapa_01 = localStorage.getItem('btn_mapa_01');
+    btn_mapa_02 = localStorage.getItem('btn_mapa_02');
+    btn_mapa_03 = localStorage.getItem('btn_mapa_03');
+    btn_mapa_04 = localStorage.getItem('btn_mapa_04');
+    btn_mapa_05 = localStorage.getItem('btn_mapa_05');
+    btn_mapa_06 = localStorage.getItem('btn_mapa_06');
+    btn_mapa_07 = localStorage.getItem('btn_mapa_07');
 
-    if (btn_ambientes_01 == 'check') {
-        $(".btn-salas_abertas").css("background-image","url('imgs/painel/bt01_3.png')");
+    if (btn_mapa_01 == 'check') {
+        $(".btn-shoppings").css("background-image","url('imgs/painel_bt06_ok.png')");
     }
-    if (btn_ambientes_02 == 'check') {
-        $(".btn-salas_fechadas").css("background-image","url('imgs/painel/bt02_3.png')");
+    if (btn_mapa_02 == 'check') {
+        $(".btn-centros_comerciais").css("background-image","url('imgs/painel_bt07_ok.png')");
     }
-    if (btn_ambientes_03 == 'check') {
-        $(".btn-salas_reunioes").css("background-image","url('imgs/painel/bt03_3.png')");
+    if (btn_mapa_03 == 'check') {
+        $(".btn-lojas_rua").css("background-image","url('imgs/painel_bt03_ok.png')");
     }
-    if (btn_ambientes_04 == 'check') {
-        $(".btn-recepcao").css("background-image","url('imgs/painel/bt04_3.png')");
+    if (btn_mapa_04 == 'check') {
+        $(".btn-galerias_comerciais").css("background-image","url('imgs/painel_bt01_ok.png')");
     }
-    if (btn_ambientes_05 == 'check') {
-        $(".btn-circulacoes").css("background-image","url('imgs/painel/bt05_3.png')");
+    if (btn_mapa_05 == 'check') {
+        $(".btn-open_mall").css("background-image","url('imgs/painel_bt04_ok.png')");
     }
-    if (btn_ambientes_06 == 'check') {
-        $(".btn-banheiros").css("background-image","url('imgs/painel/bt06_3.png')");
+    if (btn_mapa_06 == 'check') {
+        $(".btn-aeroportos").css("background-image","url('imgs/painel_bt02_ok.png')");
     }
-    if (btn_ambientes_07 == 'check') {
-        $(".btn-copas").css("background-image","url('imgs/painel/bt07_3.png')");
+    if (btn_mapa_07 == 'check') {
+        $(".btn-e_commerce").css("background-image","url('imgs/painel_bt05_ok.png')");
     }
-    if (btn_ambientes_08 == 'check') {
-        $(".btn-ambientes_descompressao").css("background-image","url('imgs/painel/bt08_3.png')");
-    }
-    if (btn_ambientes_09 == 'check') {
-        $(".btn-ambientes_especificos").css("background-image","url('imgs/painel/bt09_3.png')");
-    }
-    
+
 });
 
 //-------- /CHECK PAINEL --------\\
