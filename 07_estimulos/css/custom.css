@@ -249,6 +249,82 @@ li {
 }
 .bt-voltar:hover{transform: scale(1.1);}
 
+
+/*------- BOTÃO ÁUDIO ÁGUA -------*/
+.btn-audio_agua{
+  background: url('../imgs/popup_play.png') no-repeat center;
+  background-size: 90%;
+  background-color: #d7d7d7;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  z-index: 20;
+  border-radius: 100%;
+  filter: drop-shadow(#333 4px 4px 4px);
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-play_audio{
+  background: url('../imgs/popup_play.png') no-repeat center;
+  background-size: 100%;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: block;
+  margin: 20px auto;
+}
+.btn-audio_agua:hover, .btn-play_audio:hover{
+  background-image: url('../imgs/popup_play_hv.png');
+}
+.btn-fechar_audio{
+  background-color: #2a8080 !important;
+  color: #fff;
+  font-size: 60px;
+  font-weight: lighter;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 100%;
+  border: none !important;
+  text-shadow: none !important;
+  transition: all 0.2s;
+  filter: drop-shadow(#333 8px 8px 8px);
+  position: absolute;
+  top: 24px;
+  right: -50px;
+  padding: 0 !important;
+  padding-bottom: 5px !important;
+  line-height: 0 !important;
+}
+.btn-fechar_audio:hover{
+  background-color: #86c2c2 !important;
+  color: #fff;
+}
+
+
+.content-audio_agua{
+  background: url('../imgs/popup_fundo.png') no-repeat center;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  height: 395px !important;
+  border: none;
+  filter: drop-shadow(#333 10px 10px 10px);
+}
+.body-audio_agua{
+  width: 400px;
+  margin: auto;
+  padding-top: 50px !important;
+}
+
+#audio-agua{
+  display: none;
+}
+/*------- BOTÃO ÁUDIO ÁGUA -------*/
+
+
 @media screen and (max-width: 1024px){
   .bloco7{background: #fcf5e3;}
 }

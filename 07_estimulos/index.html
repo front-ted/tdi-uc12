@@ -92,6 +92,10 @@
       <section class="paginas">
         <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
         <div class="pagina">
+
+          <!-- Botão áudio som de água -->
+          <div class="btn-audio_agua no-print" data-toggle="modal" data-target="#modal-audio_agua" aria-hidden="true"></div>
+
           <div class="bloco bloco1">
             <header class="no-print container">
               <!-- BTO IMPRIMIR -->
@@ -550,6 +554,23 @@
     </div>
 
     <!-- Modais -->
+    <div class="modal fade no-print" id="modal-audio_agua" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-live="polite" aria-atomic="true" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content content-audio_agua no-print">
+          <div class="modal-body body-audio_agua">
+            <button type="button" class="close btn-fechar_audio" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4>Olá, estudante!</h4>
+            <p>Clique no <i>play</i> para ativar ou desativar o som.</p>
+
+            <div id="btn-play_audio" class="btn-play_audio"></div>
+            <audio id="audio-agua" controls loop>
+              <source src="audios/audio-agua_corrente.mp3" type="audio/mpeg">
+              O seu navegador não suporta a tag audio.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Modais 100% -->
 
@@ -612,6 +633,7 @@
     <script src="../template/js/images.loader.js"></script>
     <script src="../template/js/highlight.min.js"></script>
     <script src="../template/js/parallax.min.js"></script>
+    <script src="js/custom.js"></script>
     <noscript>
       <style media="screen">
         .over-loader {
