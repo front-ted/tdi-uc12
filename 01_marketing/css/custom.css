@@ -263,6 +263,8 @@ p.citacao{
   width: 640px;
   height: 360px;
   border-radius: 10px;
+  margin: 40px auto;
+  display: block;
 }
 
 .img-borda{
