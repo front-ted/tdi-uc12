@@ -275,7 +275,7 @@ li {
   cursor: pointer;
   transition: all 0.2s;
   display: block;
-  margin: 20px auto;
+  margin: 20px auto -5px auto;
 }
 .btn-audio_agua:hover, .btn-play_audio:hover{
   background-image: url('../imgs/popup_play_hv.png');
