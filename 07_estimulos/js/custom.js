@@ -7,11 +7,13 @@ var FXManager = {
 
 jQuery("document").ready(function($){
 
+    $('#modal-audio_agua').modal('show');
+
     var audioAgua = document.getElementById("audio-agua");
     var btnAgua = '0';
 
     $(".btn-audio_agua").click(function(){
-        audioAgua.volume = 0.15;
+        audioAgua.volume = 0.3;
     });
     $(".btn-play_audio").click(function(){
         if(btnAgua == '0'){
