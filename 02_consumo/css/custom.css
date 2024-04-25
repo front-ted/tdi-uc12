@@ -250,6 +250,15 @@ li {
 .bt-offline:hover{background: url('../imgs/bt_offline_hv.png') no-repeat center;}
 
 
+.video-youtube {
+  width: 640px;
+  height: 360px;
+  border-radius: 10px;
+  margin: 40px auto;
+  display: block;
+}
+
+
 @media screen and (max-width: 780px){
   .painel{
     position: unset;
@@ -278,4 +287,9 @@ li {
 }
 @media screen and (max-width: 580px){
   .modal-body .close, .carousel-control.left, .carousel-control.right{transform: scale(0.8);}
+
+  .video-youtube {
+    width: 320px;
+    height: 180px;
+  }
 }
