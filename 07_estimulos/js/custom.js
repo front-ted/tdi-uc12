@@ -12,9 +12,6 @@ jQuery("document").ready(function($){
     var audioAgua = document.getElementById("audio-agua");
     var btnAgua = '0';
 
-    $(".btn-audio_agua").click(function(){
-        audioAgua.volume = 0.3;
-    });
     $(".btn-play_audio").click(function(){
         audioAgua.volume = 0.3;
         if(btnAgua == '0'){
