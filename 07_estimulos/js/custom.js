@@ -16,6 +16,7 @@ jQuery("document").ready(function($){
         audioAgua.volume = 0.3;
     });
     $(".btn-play_audio").click(function(){
+        audioAgua.volume = 0.3;
         if(btnAgua == '0'){
             audioAgua.play();
             btnAgua = '1';
